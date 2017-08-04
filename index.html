@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>COUNTRY GIFS</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  </head>
+
+  <body>
+    <!-- Bootstrap Container will hold everything. -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 buttons">
+          <div id="buttons-view"></div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="gifs-appear-here"></div>             
+        </div>
+        <div class="col-lg-4">
+          <form role="form" id="search-form">
+
+            <!-- Here we capture the Gif search-->
+            <div class="form-group">
+              <label for="search-input">Add a Country: </label>
+
+              <input type="text" class="form-control" id="search-input">
+            </div>
+
+            <!-- Here we have our submit button -->
+            <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i>Submit</button>
+
+          </form>             
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Adds a link to jQuery and the JavaScript file. Loaded at the bottom so it waits for the HTML content to display first. If you put this at the top it will crash, because the HTML IDs won't exist yet.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </body>
+
+</html>
+
